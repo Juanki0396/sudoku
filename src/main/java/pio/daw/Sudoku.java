@@ -15,6 +15,12 @@ public class Sudoku implements Playable {
         public SudokuInput(String input) throws Playable.InvalidUserInputException {
             // TODO Take an input of the form "B37" and store row = 1, col = 2, value = 7
             this(null, null, null);
+            if input.length(!=3){
+                throw new Playable.InvalidUserInputException("Input lenght must be 3");
+            } 
+                         
+            
+
         }
         
         @Override
